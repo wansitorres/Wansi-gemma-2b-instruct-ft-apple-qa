@@ -1,5 +1,5 @@
 # Wansi-gemma-2b-instruct-ft-apple-qa
-A chatbot trained on a dataset containing questions and answers regarding Apple Devices.
+A chatbot trained on gemma2b-it fine tuned on a dataset containing questions and answers regarding Apple Devices.
 
 Fine tuning dataset: https://huggingface.co/datasets/Aashi/All_About_Apple_Devices?row=0
 
