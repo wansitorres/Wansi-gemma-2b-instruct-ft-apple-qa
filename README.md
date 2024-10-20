@@ -2,7 +2,7 @@
 
 Fine tuning dataset: https://huggingface.co/datasets/Aashi/All_About_Apple_Devices?row=0
 
-#Sample Usage
+# Sample Usage
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
