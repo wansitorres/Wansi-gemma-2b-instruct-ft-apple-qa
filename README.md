@@ -12,7 +12,9 @@ model = AutoModelForCausalLM.from_pretrained("Wansi/gemma-2b-instruct-ft-apple-q
 tokenizer = AutoTokenizer.from_pretrained("Wansi/gemma-2b-instruct-ft-apple-qa")
 
 inputs = tokenizer("How do I take a screenshot on an iPhone?.", return_tensors="pt")
+
 outputs = model.generate(**inputs, max_length= 160)
+
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 # Output of Sample Usage
