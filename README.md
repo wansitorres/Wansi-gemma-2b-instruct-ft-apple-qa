@@ -11,7 +11,7 @@ model = AutoModelForCausalLM.from_pretrained("Wansi/gemma-2b-instruct-ft-apple-q
 
 tokenizer = AutoTokenizer.from_pretrained("Wansi/gemma-2b-instruct-ft-apple-qa")
 
-inputs = tokenizer("How do I take a screenshot on an iPhone?.", return_tensors="pt")
+inputs = tokenizer(""How do I safeguard my iPhone from potential damage caused by exposure to liquids, dust, or extreme temperatures?", return_tensors="pt")
 
 outputs = model.generate(**inputs, max_length= 160)
 
@@ -19,10 +19,12 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 # Output of Sample Usage
 
-How do I take a screenshot on an iPhone?.Sure, here's how to take a screenshot on an iPhone:
-
-1. **Press and hold the power button** on your iPhone.
-2. **Slide your finger** across the screen to the left or right edge.
-3. A **snapshot icon** will appear. Tap it to take a screenshot.
-4. Your screenshot will be saved in the Photos app.
+Use protective cases like tempered glass or a case that shields the edges of your iPhone.  
+ Avoid touching sensitive areas like the screen, buttons, or charging port. 
+ Store your iPhone in a clean, dry place to reduce the risk of damage.  modelKeep your iPhone dry with a case or waterproof sleeve.  
+ Avoid using your iPhone in extreme temperatures or in humid environments.  
+ Clean your iPhone regularly with a soft, dry cloth.  
+ Avoid dropping or knocking your iPhone.  
+ Do not expose your iPhone to extreme temperatures, such as hot, cold, or extreme humidity.  
+ Consult an Apple Support professional if you have concerns.
 
